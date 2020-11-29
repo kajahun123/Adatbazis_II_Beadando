@@ -16,7 +16,7 @@ AS
 BEGIN
 	p_out_rowcnt := 0;
 	
-	IF v_check_rendszam = 1 THEN
+	IF v_check_olvasojegy = 1 THEN
 		INSERT INTO konyvek
 			(olvasojegy_code, first_name, last_name, cim, iro_id, mufaj, kiadas)
 		VALUES 
