@@ -23,7 +23,7 @@ BEGIN
 		IF v_kolcsonzes_id IS NULL THEN
 			v_kolcsonzes_id := 0;
 		END IF;
-		v_id := v_id + 1;
+		v_kolcsonzes_id := v_kolcsonzes_id + 1;
 		
 		INSERT INTO konyvek
 			(olvasojegy_code, kolcsonzo_nev, cim, iro_id, mufaj, kolcsonzes_date, kolcsonzes_id)
