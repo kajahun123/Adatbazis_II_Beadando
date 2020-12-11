@@ -12,23 +12,23 @@ CREATE OR REPLACE PROCEDURE spInsert_konyvek(
 AUTHID DEFINER
 AS
 	v_check_olvasojegy int;
-	v_kolcsonzes_id int;
+	v_iro_id int;
 BEGIN
 	p_out_rowcnt := 0;
 	
-	IF v_check_olvasojegy = 1 THEN
+	v_iro_id := sf_GetIrokId(p_iro);
+    if v_iro_id is null then
+        sp_InsertIrok(p_iro);
+        v_iro_id := sf_getIrokId(p_iro);
+    end if;
+    v_check_olvasojegy := sf_check_olvasojegy(p_olvasojegy);
 	
-		SELECT MAX(kolcsonzes_id) INTO v_kolcsonzes_id FROM konyvek;
-		
-		IF v_kolcsonzes_id IS NULL THEN
-			v_kolcsonzes_id := 0;
-		END IF;
-		v_kolcsonzes_id := v_kolcsonzes_id + 1;
+	IF v_check_olvasojegy = 1 THEN
 		
 		INSERT INTO konyvek
-			(olvasojegy_code, kolcsonzo_nev, cim, iro_id, mufaj, kolcsonzes_date, kolcsonzes_id)
+			(olvasojegy_code, kolcsonzo_nev, cim, iro_id, mufaj, kolcsonzes_date)
 		VALUES 
-        (p_olvasojegy, p_kolcsozno_nev, p_cim, p_iro, p_mufaj, p_kolcsonzes_date, v_kolcsonzes_id);
+        (p_olvasojegy, p_kolcsozno_nev, p_cim, p_iro_id, p_mufaj, p_kolcsonzes_date);
 		
         p_out_rowcnt := SQL%rowcount;
 		COMMIT;
