@@ -1,0 +1,12 @@
+C:\Users\krajc\Desktop\Egyetem\Adatbázisrendszerek_II\Beadandó\Konyvtar\Konyvtar\bin\Debug\Konyvtar.exe.config
+C:\Users\krajc\Desktop\Egyetem\Adatbázisrendszerek_II\Beadandó\Konyvtar\Konyvtar\bin\Debug\Konyvtar.exe
+C:\Users\krajc\Desktop\Egyetem\Adatbázisrendszerek_II\Beadandó\Konyvtar\Konyvtar\bin\Debug\Konyvtar.pdb
+C:\Users\krajc\Desktop\Egyetem\Adatbázisrendszerek_II\Beadandó\Konyvtar\Konyvtar\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\krajc\Desktop\Egyetem\Adatbázisrendszerek_II\Beadandó\Konyvtar\Konyvtar\obj\Debug\Konyvtar.csprojAssemblyReference.cache
+C:\Users\krajc\Desktop\Egyetem\Adatbázisrendszerek_II\Beadandó\Konyvtar\Konyvtar\obj\Debug\Konyvtar.Form1.resources
+C:\Users\krajc\Desktop\Egyetem\Adatbázisrendszerek_II\Beadandó\Konyvtar\Konyvtar\obj\Debug\Konyvtar.Properties.Resources.resources
+C:\Users\krajc\Desktop\Egyetem\Adatbázisrendszerek_II\Beadandó\Konyvtar\Konyvtar\obj\Debug\Konyvtar.csproj.GenerateResource.cache
+C:\Users\krajc\Desktop\Egyetem\Adatbázisrendszerek_II\Beadandó\Konyvtar\Konyvtar\obj\Debug\Konyvtar.csproj.CoreCompileInputs.cache
+C:\Users\krajc\Desktop\Egyetem\Adatbázisrendszerek_II\Beadandó\Konyvtar\Konyvtar\obj\Debug\Konyvtar.csproj.CopyComplete
+C:\Users\krajc\Desktop\Egyetem\Adatbázisrendszerek_II\Beadandó\Konyvtar\Konyvtar\obj\Debug\Konyvtar.exe
+C:\Users\krajc\Desktop\Egyetem\Adatbázisrendszerek_II\Beadandó\Konyvtar\Konyvtar\obj\Debug\Konyvtar.pdb
