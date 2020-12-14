@@ -19,7 +19,7 @@ BEGIN
 	v_iro_id := sf_GetIrokId(p_iro);
     if v_iro_id is null then
         sp_InsertIrok(p_iro);
-        v_iro_id := sf_getIrokId(p_iro);
+        v_iro_id := sf_GetIrokId(p_iro);
     end if;
     v_check_olvasojegy := sf_check_olvasojegy(p_olvasojegy);
 	
