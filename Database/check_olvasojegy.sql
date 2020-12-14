@@ -9,14 +9,14 @@ AS
 	v_olvasojegy_char char (1);
 	v_i int;
 BEGIN
-	IF olvasojegy IS NULL THEN
+	IF p_olvasojegy IS NULL THEN
 		return 0;
 	END IF;
     IF LENGTH(TRIM(p_olvasojegy)) = 8 then
 		v_i := 1;
 		WHILE v_i <= 8 LOOP
-			v_olvasojegy_char := substrip(p_olvasojegy, v_i, 1);
-            IF NOT (ASCII('A') <= ASCII(v_olvasojegy_char) AND ASCII(v_olvasojegy_char) <= ASCII('Z') AND ASCII('0') <= ASCII(v_olvasojegy_char) AND ASCII(v_olvasojegy_char) <= ASCII('9')) THEN
+			v_olvasojegy_char := substr(p_olvasojegy, v_i, 1);
+            IF NOT (ASCII('A') <= ASCII(v_olvasojegy_char) AND ASCII(v_olvasojegy_char) <= ASCII('Z') OR ASCII('0') <= ASCII(v_olvasojegy_char) AND ASCII(v_olvasojegy_char) <= ASCII('9')) THEN
 				return 0;
 			END IF;
             
